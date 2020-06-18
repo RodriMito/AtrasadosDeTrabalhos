@@ -1,0 +1,21 @@
+lista = []
+x = int(input('digite um número entre 10000 e 30000: '))
+while x < 10000 or x > 30000:
+    print('número inválido, tente novamente: ')
+    x = int(input('digite um número entre 10000 e 30000: '))
+y = str(x)
+lista.append(int(y[0]))
+lista.append(int(y[1]))
+lista.append(int(y[2]))
+lista.append(int(y[3]))
+lista.append(int(y[4]))
+def f(a, b, c, d, e):
+    p = a*2
+    s = b*2
+    t = c*2
+    q1 = d*2
+    q2 = e*2
+    total = p+s+t+q1+q2
+    resto = total
+    return  resto
+print(f(lista[0], lista[1], lista[2], lista[3], lista[4]))
