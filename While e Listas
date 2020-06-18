@@ -1,0 +1,12 @@
+list = []
+while True:
+    n = input('digite um número OU fim para parar')
+    if n == 'fim' and 'FIM':
+        break
+    else:
+        list.append(input(n))
+for n in list:
+    if n % 2 == 0:
+        print(n, 'Esse é PAR')
+    else:
+        print(n, 'Esse é IMPAR')
