@@ -1,0 +1,11 @@
+minimo = int(input('digite um número minimo: '))
+maximo = int(input('digite um número maximo: '))
+valor = int(input('digite o numero que deseja verificar: '))
+def f(x):
+    while x<minimo or x>maximo:
+        print(' o valor não está entre os dois número, tente outro')
+        x = int(input('digite o numero que deseja verificar'))
+    if x>minimo and x<maximo:
+        print('o numero', x, 'está entre', minimo, 'e', maximo)
+        return x
+    f(valor)
